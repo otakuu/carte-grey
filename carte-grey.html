@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Grey</title>
+</head>
+<body>
+    <h1>Carte Grey</h1>
+    <form id="passRequestForm" method="GET" action="https://gateway.tamedia.ch/ecommerce-service/pass/apple">
+        <label for="name">Name:</label>
+        <input type="text" autofocus id="name" name="name" required>
+
+        <input type="hidden" name="tamediaId" value="abcd1234567">
+        <input type="hidden" name="tenant" value="tagesanzeiger">
+        <input type="hidden" name="lang" value="DE">
+        <input type="hidden" name="expiryDate" value="12/2025">
+
+        <button type="submit">Card Grey for Apple</button>
+    </form>
+    <br>
+    <form id="passRequestFormGoogle" method="GET" action="https://gateway.tamedia.ch/ecommerce-service/pass/google">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <input type="hidden" name="tamediaId" value="abcd1234567">
+        <input type="hidden" name="tenant" value="tagesanzeiger">
+        <input type="hidden" name="lang" value="DE">
+        <input type="hidden" name="expiryDate" value="12/2025">
+
+        <button type="submit">Carte Grey for Google</button>
+    </form>
+</body>
+</html>
